@@ -59,7 +59,7 @@ p {
 }
 .btn-primary {
   padding: 1.25rem 1.5rem;
-  border-radius: .3125rem;
+  border-radius: 0.3125rem;
   color: white;
   background-color: #ff900e;
   font-family: "work sans", sans-serif;
@@ -124,7 +124,7 @@ p {
     team section styling
 --------------------------- */
 #team-section {
-  padding-block: 6rem;
+  padding-block: 8rem;
 }
 .team-container {
   display: flex;
@@ -139,4 +139,58 @@ p {
 }
 .team-content p {
   margin-bottom: 2rem;
+}
+/* ---------------------------
+    features section styling
+--------------------------- */
+#features {
+  padding-block: 8rem;
+}
+.features-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9rem;
+}
+.features-content-heading {
+  margin-bottom: 2rem;
+}
+.features-content-heading h2 {
+  padding-left: 1.5rem;
+  border-left: 5px solid #ff900e;
+  max-width: 30rem;
+}
+.features-content-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.features-content-cards .card {
+  border-radius: 0.3125rem;
+  background: #fff;
+  padding: 1.5rem;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.features-img-container {
+  position: relative;
+}
+.img-card {
+  background-color: #ff900e;
+  width: 20rem;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 0.625rem;
+  position: absolute;
+  bottom: -3.75rem;
+  left: -5.9375rem;
+}
+.img-title {
+  margin: 0;
+  color: white;
+  font-size: 3.4375rem;
+}
+.img-card p {
+  font-size: 1.5625rem;
+  margin-top: 0.625rem;
+  color: white;
 }
