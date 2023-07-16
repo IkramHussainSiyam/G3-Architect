@@ -83,7 +83,11 @@ p {
 --------------------------- */
 #navbar {
   padding-block: 1.875rem;
-  background: rgba(255, 144, 14, 0.1);
+  background: rgb(255, 243, 230);
+  border-bottom: 2px solid rgba(119, 62, 1, 0.03);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .nav-container {
   display: flex;
@@ -96,17 +100,23 @@ p {
 .nav-container .menus ul {
   display: flex;
   align-items: center;
-  gap: 4.375rem;
+  gap: 3rem;
   font-size: 1.125rem;
   font-family: "inter", sans-serif;
   font-weight: 500;
+}
+.nav-container .menus li:nth-child(4) a {
+  background-color: #ff900e;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3125rem;
 }
 /* ---------------------------
     hero section styling
 --------------------------- */
 #hero-section {
   padding-block: 5rem;
-  background: rgba(255, 144, 14, 0.1);
+  background: rgb(255, 243, 230);
 }
 .hero-container {
   display: flex;
@@ -160,17 +170,13 @@ p {
   border-left: 5px solid #ff900e;
   max-width: 30rem;
 }
-.features-content-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
 .features-content-cards .card {
   border-radius: 0.3125rem;
   background: #fff;
   padding: 1.5rem;
   border: 1px solid rgb(241, 241, 241);
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.25rem;
 }
 .features-img-container {
   position: relative;
@@ -252,6 +258,9 @@ p {
 /* ---------------------------
     footer section styling
 --------------------------- */
+footer {
+  margin-top: 6rem;
+}
 .footer-container {
   border-radius: 8px;
   background: #fff4e7;
@@ -267,7 +276,7 @@ p {
           Responsive section
 ------------------------------------- */
 
-/* for mobile */
+/* ------------------ for mobile ------------------ */
 @media screen and (max-width: 576px) {
   /* utility and reusable codes */
   h1 {
@@ -295,12 +304,6 @@ p {
   .nav-container .menus li:nth-child(2),
   .nav-container .menus li:nth-child(3) {
     display: none;
-  }
-  .nav-container .menus li:nth-child(4) a {
-    background-color: #ff900e;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 0.3125rem;
   }
   /* ---------------------------
       team section responsive
@@ -364,6 +367,153 @@ p {
   --------------------------- */
   .footer-container p {
     font-size: 1rem;
-    color: #424242;
+  }
+}
+
+/* ---------------- for tablet medium ---------------- */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  /* utility and reusable codes */
+  .section-padding {
+    padding-block: 6rem;
+  }
+  .container {
+    max-width: 700px;
+  }
+  /* ---------------------------
+        navbar responsive
+  --------------------------- */
+  .nav-container .menus li:nth-child(1),
+  .nav-container .menus li:nth-child(2),
+  .nav-container .menus li:nth-child(3) {
+    display: none;
+  }
+  /* ---------------------------
+      team section responsive
+  --------------------------- */
+  .team-container {
+    flex-direction: column;
+  }
+  .team-grid-img img {
+    max-width: 100%;
+  }
+  /* ---------------------------
+    features section responsive
+  --------------------------- */
+  .features-container {
+    flex-direction: column-reverse;
+  }
+  .features-img-container > img {
+    max-width: 100%;
+  }
+  .img-card {
+    bottom: -3.75rem;
+    left: 50%;
+  }
+  /* --------------------------------
+      achievement section responsive
+  -------------------------------- */
+  .achievement-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .achievement-card-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .achievement-content {
+    text-align: center;
+  }
+  .achievement-card {
+    width: 20.375rem;
+  }
+  /* ---------------------------
+    sponsor section responsive
+  --------------------------- */
+  .sponsor-companies {
+    justify-content: center;
+  }
+  .sponsor-content {
+    padding: 0 6rem;
+  }
+  .sponsor-companies {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+}
+
+/* ---------------- for tablet big ---------------- */
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  /* utility and reusable codes */
+  .section-padding {
+    padding-block: 6.5rem;
+  }
+  .container {
+    max-width: 940px;
+  }
+  /* ---------------------------
+      team section responsive
+  --------------------------- */
+  .team-container {
+    flex-direction: column;
+  }
+  .team-grid-img {
+    width: 100%;
+  }
+  .team-grid-img img {
+    width: 100%;
+  }
+  /* ---------------------------
+    features section responsive
+  --------------------------- */
+  .features-container {
+    flex-direction: column-reverse;
+  }
+  .features-img-container > img {
+    max-width: 100%;
+  }
+  .features-content-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.25rem;
+  }
+  .img-card {
+    bottom: -3.75rem;
+    left: 50%;
+  }
+  /* --------------------------------
+      achievement section responsive
+  -------------------------------- */
+  .achievement-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .achievement-content {
+    text-align: center;
+  }
+  .achievement-card-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .achievement-card {
+    width: 17rem;
+  }
+  /* ---------------------------
+    sponsor section responsive
+  --------------------------- */
+  .sponsor-companies {
+    justify-content: center;
+  }
+  .sponsor-content {
+    padding: 0 14rem;
+  }
+  .sponsor-companies {
+    flex-wrap: wrap;
+    gap: 60px;
   }
 }
