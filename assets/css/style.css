@@ -517,3 +517,12 @@ footer {
     gap: 60px;
   }
 }
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+  /* utility and reusable codes */
+  .section-padding {
+    padding-block: 6.5rem;
+  }
+  .container {
+    max-width: 1300px;
+  }
+}
