@@ -13,6 +13,11 @@ body {
   background: white;
 }
 /* ---- prerequisites ---- */
+ul, a {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
 /* fonts and typhography */
 h1 {
   font-family: 'playfair display', serif;
@@ -25,15 +30,18 @@ h2 {
   font-size: 2.8125rem;
   font-weight: 700;
   color: #131313;
+  margin-bottom: 1.5rem;
 }
 h3, h4 {
   font-size: 1.25rem;
   font-weight: 600;
   font-family: 'work sans', sans-serif;
   color: #131313;
+  margin-bottom: .625rem;
 }
 h4 {
   color: #727272;
+  margin-bottom: 0;
 }
 p, span {
   color: #727272;
@@ -64,3 +72,22 @@ p, span {
 /* ---------------------------
       Navbar stylings
 --------------------------- */
+#navbar {
+  padding-block: 30px;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-container .logo h2 {
+  margin-bottom: 0;
+}
+.nav-container .menus ul {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  font-size: 1.125rem;
+  font-family: 'inter', sans-serif;
+  font-weight: 500;
+}
