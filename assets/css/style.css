@@ -246,10 +246,26 @@ p {
 .sponsor-content {
   text-align: center;
   padding: 0 28rem;
-} 
+}
 .sponsor-companies {
   display: flex;
   align-items: center;
   justify-content: space-between;
   filter: grayscale(1);
+}
+/* ---------------------------
+    footer section styling
+--------------------------- */
+#footer {
+  padding-block: 80px;
+}
+.footer-container {
+  border-radius: 8px;
+  background: #fff4e7;
+  text-align: center;
+  padding: 2rem;
+}
+.footer-container p {
+  font-size: 1.25rem;
+  color: #424242;
 }
