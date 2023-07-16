@@ -1,0 +1,65 @@
+/* ---------------------------
+     Google fonts
+--------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700;800;900&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/* initials */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: white;
+}
+/* ---- prerequisites ---- */
+/* fonts and typhography */
+h1 {
+  font-family: 'playfair display', serif;
+  font-size: 4rem;
+  color: #131313;
+  font-weight: 700;
+}
+h2 {
+  font-family: 'work sans', sans-serif;
+  font-size: 2.8125rem;
+  font-weight: 700;
+  color: #131313;
+}
+h3, h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'work sans', sans-serif;
+  color: #131313;
+}
+h4 {
+  color: #727272;
+}
+p, span {
+  color: #727272;
+  font-size: 1rem;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: 'inter', sans-serif;
+}
+/* ---- utility classes ---- */
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.btn {
+  padding: 20px 24px;
+  border-radius: 5px;
+  color: white;
+  font-family: 'work sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* ---------------- styling starts from here ---------------- */
+/* ---------------------------
+      Navbar stylings
+--------------------------- */
