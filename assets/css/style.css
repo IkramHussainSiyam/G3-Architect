@@ -4,6 +4,9 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700;800;900&family=Work+Sans:wght@400;500;600;700&display=swap");
 /* for removing default browser spacings */
+.hide {
+  display: none;
+}
 * {
   margin: 0;
   padding: 0;
@@ -56,6 +59,9 @@ p {
 .container {
   max-width: 90rem;
   margin: 0 auto;
+}
+.section-padding {
+  padding-block: 8rem;
 }
 .btn-primary {
   padding: 1.25rem 1.5rem;
@@ -123,9 +129,6 @@ p {
 /* ---------------------------
     team section styling
 --------------------------- */
-#team-section {
-  padding-block: 8rem;
-}
 .team-container {
   display: flex;
   align-items: center;
@@ -143,9 +146,6 @@ p {
 /* ---------------------------
     features section styling
 --------------------------- */
-#features {
-  padding-block: 8rem;
-}
 .features-container {
   display: flex;
   align-items: center;
@@ -169,7 +169,8 @@ p {
   border-radius: 0.3125rem;
   background: #fff;
   padding: 1.5rem;
-  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgb(241, 241, 241);
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.05);
 }
 .features-img-container {
   position: relative;
@@ -197,9 +198,6 @@ p {
 /* -------------------------------------
     achievement section styling
 ------------------------------------- */
-#achievement {
-  padding-block: 8rem;
-}
 .achievement-content p {
   margin-bottom: 4rem;
   max-width: 34rem;
@@ -235,9 +233,6 @@ p {
 /* ---------------------------
     sponsor section styling
 --------------------------- */
-#sponsor {
-  padding-block: 8rem;
-}
 .sponsor-container {
   display: flex;
   flex-direction: column;
@@ -249,6 +244,7 @@ p {
 }
 .sponsor-companies {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   filter: grayscale(1);
@@ -256,9 +252,6 @@ p {
 /* ---------------------------
     footer section styling
 --------------------------- */
-#footer {
-  padding-block: 80px;
-}
 .footer-container {
   border-radius: 8px;
   background: #fff4e7;
@@ -268,4 +261,109 @@ p {
 .footer-container p {
   font-size: 1.25rem;
   color: #424242;
+}
+
+/* -------------------------------------
+          Responsive section
+------------------------------------- */
+
+/* for mobile */
+@media screen and (max-width: 576px) {
+  /* utility and reusable codes */
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.875rem;
+  }
+  .section-padding {
+    padding-block: 5rem;
+  }
+  .container {
+    max-width: auto;
+    margin: 0;
+    padding: 0 2rem;
+  }
+  .btn-primary {
+    padding: 14px 16px;
+    font-size: 1.125rem;
+  }
+  /* ---------------------------
+        navbar responsive
+  --------------------------- */
+  .nav-container .menus li:nth-child(1),
+  .nav-container .menus li:nth-child(2),
+  .nav-container .menus li:nth-child(3) {
+    display: none;
+  }
+  .nav-container .menus li:nth-child(4) a {
+    background-color: #ff900e;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3125rem;
+  }
+  /* ---------------------------
+      team section responsive
+  --------------------------- */
+  .team-container {
+    flex-direction: column;
+  }
+  .team-grid-img img {
+    max-width: 100%;
+  }
+  /* ---------------------------
+    features section responsive
+  --------------------------- */
+  .features-container {
+    flex-direction: column-reverse;
+  }
+  .features-img-container > img {
+    max-width: 100%;
+  }
+  .img-card {
+    background-color: #ff900e;
+    width: 14rem;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+    position: absolute;
+    bottom: -3.75rem;
+    left: 25%;
+  }
+  .img-title {
+    font-size: 2.3rem;
+  }
+  .img-card p {
+    font-size: 1.3rem;
+  }
+  /* --------------------------------
+    achievement section responsive
+  -------------------------------- */
+  .achievement-card-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .achievement-card {
+    width: 100%;
+  }
+  /* ---------------------------
+    sponsor section responsive
+  --------------------------- */
+  .sponsor-companies {
+    justify-content: center;
+  }
+  .sponsor-content {
+    padding: 0;
+  }
+  .sponsor-companies {
+    flex-direction: column;
+    gap: 50px 0;
+  }
+  /* ---------------------------
+    footer section responsive
+  --------------------------- */
+  .footer-container p {
+    font-size: 1rem;
+    color: #424242;
+  }
 }
