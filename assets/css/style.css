@@ -1,9 +1,9 @@
 /* ---------------------------
-     Google fonts
+       initials
 --------------------------- */
+/* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700;800;900&family=Work+Sans:wght@400;500;600;700&display=swap');
-
-/* initials */
+/* for removing default browser spacings */
 * {
   margin: 0;
   padding: 0;
@@ -60,6 +60,7 @@ p, span {
 }
 
 /* ---------------- styling starts from here ---------------- */
+
 /* ---------------------------
       Navbar stylings
 --------------------------- */
