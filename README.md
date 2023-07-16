@@ -11,7 +11,10 @@ Live preview: https://ikramhussainsiyam.github.io/Responsive-g3-architects-websi
 ## Desktop view
 ![Desktop view](assets/layout/Desktop%20view.png "Desktop view")
 
-## Laptop view
+## Small Laptop
+![Small Laptop](assets/layout/small%20laptop.png "Small Laptop")
+
+## Big Laptop
 ![Laptop view](assets/layout/laptop.png "Laptop view")
 
 ## Big Tablet
