@@ -2,7 +2,7 @@
        initials
 --------------------------- */
 /* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700;800;900&family=Work+Sans:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700;800;900&family=Work+Sans:wght@400;500;600;700&display=swap");
 /* for removing default browser spacings */
 * {
   margin: 0;
@@ -13,53 +13,57 @@ body {
   background: white;
 }
 /* ---- prerequisites ---- */
-ul, a {
+ul,
+a {
   list-style: none;
   text-decoration: none;
   color: #000;
 }
 /* fonts and typhography */
 h1 {
-  font-family: 'playfair display', serif;
+  font-family: "playfair display", serif;
   font-size: 4rem;
   color: #131313;
   font-weight: 700;
 }
 h2 {
-  font-family: 'work sans', sans-serif;
+  font-family: "work sans", sans-serif;
   font-size: 2.8125rem;
   font-weight: 700;
   color: #131313;
   margin-bottom: 1.5rem;
 }
-h3, h4 {
+h3,
+h4 {
   font-size: 1.25rem;
   font-weight: 600;
-  font-family: 'work sans', sans-serif;
+  font-family: "work sans", sans-serif;
   color: #131313;
-  margin-bottom: .625rem;
+  margin-bottom: 0.625rem;
 }
 h4 {
   color: #727272;
   margin-bottom: 0;
 }
-p, span {
+p,
+span {
   color: #727272;
   font-size: 1rem;
   line-height: 26px;
   font-weight: 400;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
 }
 /* ---- utility classes ---- */
 .container {
   max-width: 90rem;
   margin: 0 auto;
 }
-.btn {
+.btn-primary {
   padding: 20px 24px;
   border-radius: 5px;
   color: white;
-  font-family: 'work sans', sans-serif;
+  background-color: #ff900e;
+  font-family: "work sans", sans-serif;
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
@@ -74,6 +78,7 @@ p, span {
 --------------------------- */
 #navbar {
   padding-block: 30px;
+  background: rgba(255, 144, 14, 0.10);
 }
 .nav-container {
   display: flex;
@@ -88,6 +93,31 @@ p, span {
   align-items: center;
   gap: 70px;
   font-size: 1.125rem;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
   font-weight: 500;
+}
+/* ---------------------------
+    hero section styling
+--------------------------- */
+#hero-section {
+  padding-block: 80px;
+  background: rgba(255, 144, 14, 0.1);
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.125rem;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 48rem;
+  text-align: center;
+}
+.hero-banner img {
+  max-width: 100%;
 }
